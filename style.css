@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --img-container-width: 33vw;
+    --login-container-width: calc(100% - var(--img-container-width));
+    --form-height: 33vh;
+}
+
+body {
+    display: flex;
+}
+
+.image-container {
+    border: 2px solid red;
+    height: 100vh;
+    width: var(--img-container-width)
+}
+
+.logo-container {
+    border: 2px solid cyan;
+    width: var(--img-container-width);
+    height: 22vh;
+    margin-top: 11vh;
+}
+
+.login-container {
+    border: 2px solid blue;
+    height: 100vh;
+    width: var(--login-container-width);
+}
+
+.quote {
+    border: 2px solid green;
+    height: var(--form-height);
+}
+
+.form-container {
+    border: 2px solid black;
+    height: var(--form-height)
+}
+
+.buttons {
+    border: 2px solid yellow;
+    height: var(--form-height);
+}
