@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'odin';
+    src: url('Norse-Bold.otf')format('opentype');
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -15,20 +20,38 @@ body {
 
 .image-container {
     display: flex;
-    border: 2px solid red;
+    position: absolute;
     height: 100vh;
     width: var(--img-container-width);
+    justify-content: center;
 }
 
-.image-container > img {
+.image-container > img{
     width: 100%;
 }
 
+.image-container > .image-footer {
+    position: absolute;
+    bottom: 1%;
+    color: white;
+}
+
 .logo-container {
-    border: 2px solid cyan;
+    display: flex;
     width: var(--img-container-width);
-    height: 22vh;
-    margin-top: 11vh;
+    height: 16vh;
+    margin-top: 17vh;
+    background-color: rgba(0, 0, 0, .6);
+    justify-content: center;
+    align-items: center;
+    font-size: 125px;
+    color: white;
+    font-family: 'odin';
+    position: absolute;
+}
+
+.logo-container > img {
+    height: 90%;
 }
 
 .login-container {
