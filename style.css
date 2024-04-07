@@ -36,6 +36,10 @@ input {
     box-shadow: none;
 }
 
+input:focus {
+    outline-color: blue;
+}
+
 .image-container {
     display: flex;
     height: 100vh;
@@ -105,10 +109,6 @@ input[name$='pass']:invalid {
 
 input[name$='pass']:valid {
     border-color: green;
-}
-
-input:focus {
-    border-color: red;
 }
 
 .buttons {
