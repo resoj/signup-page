@@ -10,7 +10,7 @@
 
 :root {
     --img-container-width: 33vw;
-    --login-container-width: calc(100% - var(--img-container-width));
+    --login-container-width: calc(100vw - var(--img-container-width));
     --form-height: 33vh;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -21,15 +21,18 @@ body {
 }
 
 form {
-    border: 2px solid black;
     height: var(--form-height);
-    padding-right: 150px;
+    padding-right: 400px;
+    margin-left: -50px;
+    padding-left: 50px;
+    margin-right: -200px;
+    background-color: white;
 }
 
 legend {
     font-size: 30px;
     font-weight: bold;
-    padding: 15px 0;
+    padding: 15px 0px;
 }
 
 fieldset {
@@ -42,7 +45,7 @@ fieldset {
 
 input {
     width: 350px;
-    border-radius: 4px;
+    border-radius: 8px;
     border: 2px solid #E5E7EB;
     box-shadow: none;
     height: 25px;
@@ -50,7 +53,6 @@ input {
 
 input:focus {
     outline-color: blue;
-    
 }
 
 input[name$='pass']:invalid {
@@ -98,7 +100,6 @@ input[name$='pass']:valid {
 }
 
 .login-container {
-    border: 2px solid blue;
     height: 100vh;
     width: var(--login-container-width);
     padding-right: 200px;
@@ -106,7 +107,6 @@ input[name$='pass']:valid {
 }
 
 .quote {
-    border: 2px solid green;
     display: flex;
     flex-direction: column;
     font-weight:bold;
@@ -114,6 +114,7 @@ input[name$='pass']:valid {
     font-size: 32px;
     gap: 25px;
     justify-content:end;
+    margin-bottom: 25px;
 }
 
 .entry {
@@ -121,13 +122,7 @@ input[name$='pass']:valid {
     flex-direction: column;
 }
 
-.buttons {
-    border: 2px solid yellow;
-    height: var(--form-height);
-    cursor: pointer;
-}
-
-.buttons > .create-account-button {
+.create-account-button {
     display: flex;
     margin-top: 25px;
     margin-left: 25px;
@@ -138,7 +133,9 @@ input[name$='pass']:valid {
     color: white;
 }
 
-.buttons > .login-button {
+.login-button {
+    width: fit-content;
     margin-top: 25px;
     margin-left: 50px;
+    cursor: pointer;
 }
