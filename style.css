@@ -126,7 +126,7 @@ input[name$='pass']:valid {
     height: var(--form-height);
 }
 
-.buttons > .create-account {
+.buttons > .create-account-button {
     display: flex;
     margin-top: 25px;
     margin-left: 25px;
@@ -135,4 +135,9 @@ input[name$='pass']:valid {
     border-radius: 10px;
     background-color: #596d48;
     color: white;
+}
+
+.buttons > .login-button {
+    margin-top: 25px;
+    margin-left: 50px;
 }
