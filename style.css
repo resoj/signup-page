@@ -124,6 +124,7 @@ input[name$='pass']:valid {
 .buttons {
     border: 2px solid yellow;
     height: var(--form-height);
+    cursor: pointer;
 }
 
 .buttons > .create-account-button {
