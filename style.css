@@ -99,12 +99,16 @@ input {
     justify-content: space-between;
 }
 
-input[name='user_pass']:invalid {
+input[name$='pass']:invalid {
     border-color: red;
 }
 
-input[name='user_pass']:valid {
+input[name$='pass']:valid {
     border-color: green;
+}
+
+input:focus {
+    border-color: red;
 }
 
 .buttons {
