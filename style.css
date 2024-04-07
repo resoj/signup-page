@@ -21,23 +21,44 @@ body {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    border: 2px solid black;
+    height: var(--form-height);
+    padding-right: 150px;
 }
 
 legend {
     font-size: 30px;
     font-weight: bold;
+    padding: 15px 0;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    border: none;
 }
 
 input {
+    width: 350px;
     border-radius: 4px;
-    border: 1px solid #E5E7EB;
+    border: 2px solid #E5E7EB;
     box-shadow: none;
+    height: 25px;
 }
 
 input:focus {
     outline-color: blue;
+    
+}
+
+input[name$='pass']:invalid {
+    border-color: red;
+}
+
+input[name$='pass']:valid {
+    border-color: green;
 }
 
 .image-container {
@@ -95,20 +116,9 @@ input:focus {
     justify-content:end;
 }
 
-.form-container {
+.entry {
     display: flex;
-    border: 2px solid black;
-    height: var(--form-height);
-    padding-right: 100px;
-    justify-content: space-between;
-}
-
-input[name$='pass']:invalid {
-    border-color: red;
-}
-
-input[name$='pass']:valid {
-    border-color: green;
+    flex-direction: column;
 }
 
 .buttons {
